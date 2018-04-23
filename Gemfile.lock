@@ -60,10 +60,9 @@ GEM
       execjs
     bcrypt (3.1.11)
     bindex (0.5.0)
-    bootstrap (4.1.0)
-      autoprefixer-rails (>= 6.0.3)
-      popper_js (>= 1.12.9, < 2)
-      sass (>= 3.5.2)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     byebug (10.0.2)
     capybara (2.18.0)
@@ -147,7 +146,6 @@ GEM
     orm_adapter (0.5.0)
     polyamorous (1.3.3)
       activerecord (>= 3.0)
-    popper_js (1.12.9)
     public_suffix (3.0.2)
     puma (3.11.4)
     rack (2.0.4)
@@ -248,7 +246,7 @@ PLATFORMS
 DEPENDENCIES
   active_skin
   activeadmin
-  bootstrap
+  bootstrap-sass
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
