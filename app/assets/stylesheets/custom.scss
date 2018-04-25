@@ -886,16 +886,23 @@ img {
 /**
  * 13.0 - Pagination
  */
-.pagination-simple {
+.facepagination {
+  float: left;
+  a {
+    font-size: 14px;
+  }
+
+}
+.facepagination-simple {
     padding-left: 30px;
     font-size: 16px;
 }
 
-.pagination ul {
+.facepagination ul {
     list-style: none;
 }
 
-.pagination ul li {
+.facepagination ul li {
     display: inline-block;
     font-size: 16px;
     margin-right: 5px;

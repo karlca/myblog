@@ -4,13 +4,17 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    #按创建时间倒叙排列
+    @posts = Post.all.order(created_at: :desc).page params[:page]
+    #@posts = Post.paginate(page: params[:page])
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
-    
+    #阅读计数
+    @post = Post.find(params[:id])
+    @post.increment!(:readcount)
   end
 
   # GET /posts/new
