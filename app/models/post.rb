@@ -6,6 +6,8 @@ class Post < ApplicationRecord
   validates :body, presence: true
   #一个博客一个分类
   belongs_to :category
+  #一个博客有多个评论
+  has_many :comments
 
   #设置分页数据
   paginates_per 4
