@@ -20,43 +20,41 @@
         </article>
         <section class="comment-area" id="comment-area">
           <hr>
-          <h3>发表评论</h3>
-          <%= form_for ([@post, @post.comments.build]) do |f| %>
-          
-            <div class="row">
-              <div class="col-md-4">
-                <%= f.label :name %>
-                <%= f.text_field :name %>
-              </div>
-              <div class="col-md-4">
-                <%= f.label :email %>
-                <%= f.text_field :email %>
-              </div>
-              <div class="col-md-4">
-                <%= f.label :url %>
-                <%= f.text_field :url %>
-              </div>
-              <div class="col-md-12">
-                <%= f.label :body %>
-                <%= f.text_area :body %>
-                <%= f.submit  %>
-              </div>
-            </div>    <!-- row -->
-          <% end %>
           <div class="comment-list-panel">
             <h3>评论列表，共 <span><%= @post.comments.count %></span> 条评论</h3>
             <ul class="comment-list list-unstyled">
-              <% @post.comments.each  do |comm| %>
-              <li class="comment-item">
-                <span class="nickname"><%= comm.name %></span>
-                <time class="submit-date" datetime="2012-11-09T23:15:57+00:00"><%= comm.created_at %></time>
-                <div class="text">
-                  <%= comm.body %>
-                </div>
-              </li>
+              <% @post.comments.each do |comm| %>
+                <li class="comment-item">
+                  <span class="nickname"><%= comm.name %></span>
+                  <time class="submit-date" datetime="2012-11-09T23:15:57+00:00"><%= comm.created_at %></time>
+                  <div class="text">
+                    <%= comm.body %>
+                  </div>
+                </li>
               <% end %>
             </ul>
           </div>
+          <hr>
+          <h3>发表评论</h3>
+          <%= simple_form_for ([@post, @post.comments.build]) do |f| %>
+
+            <div class="row">
+              <div class="col-md-4">
+                <%= f.input :name, label: '姓名', input_html: {class: "form-control"}  %>
+              </div>
+              <div class="col-md-4">
+                <%= f.input :email, label: '邮件', input_html: {class: "form-control"} %>
+              </div>
+              <div class="col-md-4">
+                <%= f.input :url, label: '网址', input_html: {class: "form-control"} %>
+              </div>
+              <div class="col-md-12">
+                <%= f.input :body, label:false, placeholder: '请输入留言', input_html: {class: "form-control", rows: 10, cols: 8}%>
+                <%= f.button :submit, "回复", class: "btn btn-primary", data: {disable_with: "回复中..."} %>
+              </div>
+            </div>    <!-- row -->
+          <% end %>
+
         </section>
       </main>
       <%= render "shared/targ" %>
