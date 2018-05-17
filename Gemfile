@@ -53,13 +53,15 @@ gem 'groupdate'
 gem 'therubyracer', platforms: :ruby
 
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'sqlite3'
+  # gem 'sqlite3'
+  gem 'mysql2'
 end
 
 group :development do
