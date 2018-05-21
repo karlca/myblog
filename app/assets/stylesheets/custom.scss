@@ -47,7 +47,7 @@ b {
 
 
 /* 链接和activemenu css 冲突，所以加了face */
-a.face {
+a {
       color: #333;
       text-decoration: none;
       &:hover,&:focus {
@@ -58,6 +58,7 @@ a.face {
 ::selection {
     background-color: #eee;
 }
+
 
 body {
     color: #444;
@@ -163,17 +164,6 @@ img {
     border-bottom: 0;
 }
 
-.navbar-toggle {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    margin-right: 25px;
-}
-
-.navbar-toggle span {
-    font-size: 2em;
-    color: #000;
-}
 
 /**
  * 3.2.1 - Main Nav CSS 3 Hover Effect
