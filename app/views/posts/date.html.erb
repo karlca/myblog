@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<div class="content-body">
+  <div class="container">
+    <div class="row">
+      <!--博客列表-->
+      <main class="col-md-8">
+        <ul class="list-group">
+          <a href="#" class="list-group-item disabled">
+            2018
+          </a>
+        <% @posts.each do |post| %>
+            <li class="list-group-item"><%= post.created_at %></li>
+
+        <% end %>
+        </ul>
+        <div class="facepagination" >
+          <%= paginate @posts, window: 2 %>
+        </div>
+      </main>
+      <%= render "shared/targ" %>
+    </div>
+  </div>
+</div>

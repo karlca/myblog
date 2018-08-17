@@ -61,8 +61,8 @@ a {
 
 
 body {
-    color: #444;
-    font-family: 'Lato', sans-serif;
+  color: #444;
+  font-family: 'Lato', sans-serif;
 }
 
 p {
@@ -106,10 +106,9 @@ img {
  */
 
 #site-header {
-    background-color: #FFF;
-    padding: 25px 20px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #e7e7e7;
+  background-color: #FFF;
+  padding: 25px 20px;
+  margin-bottom: 10px;
 }
 
 .copyrights {
@@ -900,4 +899,34 @@ img {
 
 .current a {
     color: red;
+}
+
+
+.category {
+  background: #fff;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.category-title {
+  text-align: left;
+  font-size: 1.9em;
+  margin-bottom: 5px;
+  line-height: 1.6;
+}
+
+.category-meta {
+  text-align: left;
+  font-size: 13px;
+}
+
+.category-content {
+  font-size: 18px;
+  line-height: 1.9;
+  font-weight: 300;
+  color: #000;
+}
+
+.list-group {
+  margin-top: 30px;
 }

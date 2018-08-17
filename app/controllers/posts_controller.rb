@@ -66,10 +66,15 @@ class PostsController < ApplicationController
     end
   end
 
+  #根据时间查询(年归档)
+  def date
+    @posts = Post.where('extract(year from created_at) = ?', params[:year]).order(created_at: :desc).page params[:page]
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post = Post.find(params[:id])
+      @post = Post.find_by_created_at(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

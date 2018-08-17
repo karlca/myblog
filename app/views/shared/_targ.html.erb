@@ -19,7 +19,7 @@
     <ul>
       <% archives.each do |pl| %>
         <li>
-          <a href="" class="face">
+          <a href="<%= year_path(pl[0]) %>">
           <%= pl[0] %> ( <%= pl[1] %> )
           </a>
         </li>
@@ -32,7 +32,7 @@
     <ul>
       <% getcategory.each do |ca| %>
         <li>
-          <a href="#" class="face">
+          <a href="#">
             <%= ca[0].name %> ( <%= ca[1] %> )
           </a>
         </li>

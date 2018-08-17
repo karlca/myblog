@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  get 'posts/year/:year', to: 'posts#date', as: 'year'
+
   get 'about', to: 'abouts#index', as: 'about'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
