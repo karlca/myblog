@@ -13,9 +13,9 @@
                         <div class="entry-meta ">
                             <span class="post-category"><%= post.category.name %></span>
                             <span class="post-date"><time class="entry-date"
-                                                                      datetime="2012-11-09T23:15:57+00:00"><%= post.created_at %></time></span>
+                                                                      ><%= post.created_at.strftime("%F %T") %></time></span>
                             <span class="comments-link"><%= post.readcount %> 阅读</span>
-                            <span class="views-count">588 评论</span>
+                            <span class="views-count"><%= post.comments.count %> 评论</span>
                         </div>
                     </header>
                   <div class="entry-content clearfix">

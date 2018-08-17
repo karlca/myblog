@@ -5,11 +5,9 @@
       <!--博客列表-->
       <main class="col-md-8">
         <ul class="list-group">
-          <a href="#" class="list-group-item disabled">
-            2018
-          </a>
+
         <% @posts.each do |post| %>
-            <li class="list-group-item"><%= post.created_at %></li>
+            <%= post.title %> <%= post.created_at %>
 
         <% end %>
         </ul>
