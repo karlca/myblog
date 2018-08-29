@@ -71,6 +71,11 @@ class PostsController < ApplicationController
     @posts = Post.where('extract(year from created_at) = ?', params[:year]).order(created_at: :desc).page params[:page]
   end
 
+  #根据分类查询
+  def category
+    @posts = Post.where('category_id = ?', params[:cid]).order(created_at: :desc).page params[:page]
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post

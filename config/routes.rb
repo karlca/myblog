@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'posts/year/:year', to: 'posts#date', as: 'year'
 
+  get 'posts/category/:cid', to: 'posts#category', as: 'category'
+
   get 'about', to: 'abouts#index', as: 'about'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

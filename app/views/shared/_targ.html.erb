@@ -32,7 +32,7 @@
     <ul>
       <% getcategory.each do |ca| %>
         <li>
-          <a href="#">
+          <a href="<%= category_path(ca[0]) %>">
             <%= ca[0].name %> ( <%= ca[1] %> )
           </a>
         </li>
