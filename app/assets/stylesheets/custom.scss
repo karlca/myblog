@@ -211,9 +211,9 @@ img {
 .entry-title {
     text-align: left;
     font-size: 1.9em;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     line-height: 1.6;
-    padding: 10px 0;
+    #padding: 10px 0;
 }
 
 .entry-meta {
@@ -876,27 +876,11 @@ img {
  * 13.0 - Pagination
  */
 .facepagination {
-  float: left;
-  a {
-    font-size: 14px;
-  }
+
   padding: 30px;
 
 }
-.facepagination-simple {
-    padding-left: 30px;
-    font-size: 16px;
-}
 
-.facepagination ul {
-    list-style: none;
-}
-
-.facepagination ul li {
-    display: inline-block;
-    font-size: 16px;
-    margin-right: 5px;
-}
 
 .current a {
     color: red;

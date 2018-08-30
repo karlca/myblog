@@ -24,7 +24,7 @@
                 </article>
                 <% end %>
               <div class="facepagination" >
-                <%= paginate @posts, window: 2 %>
+                <%= paginate @posts, outer_window: 3%>
               </div>
             </main>
             <%= render "shared/targ" %>
