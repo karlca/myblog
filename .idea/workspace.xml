@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45864c80-41b9-440c-bc7c-dc73d960a599" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/abouts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/abouts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_head.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_head.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -52,7 +52,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Gemfile" value="37" />
-          <entry key="erb" value="129" />
+          <entry key="erb" value="143" />
           <entry key="rb" value="213" />
           <entry key="scss" value="29" />
           <entry key="yml" value="28" />
@@ -60,7 +60,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="RHTML" value="129" />
+          <entry key="RHTML" value="143" />
           <entry key="Ruby" value="250" />
           <entry key="SCSS" value="29" />
           <entry key="YAML" value="28" />
@@ -68,7 +68,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="erb" value="8" />
+          <entry key="erb" value="9" />
           <entry key="rb" value="5" />
           <entry key="scss" value="3" />
           <entry key="yml" value="4" />
@@ -76,7 +76,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="RHTML" value="8" />
+          <entry key="RHTML" value="9" />
           <entry key="Ruby" value="5" />
           <entry key="SCSS" value="3" />
           <entry key="YAML" value="4" />
@@ -95,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/abouts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -136,6 +136,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
               <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_head.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="92" selection-start-line="17" selection-start-column="92" selection-end-line="17" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -202,7 +211,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/helpers/posts_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_head.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/navbar.scss" />
         <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/date.html.erb" />
@@ -216,6 +224,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/abouts/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_head.html.erb" />
       </list>
     </option>
   </component>
@@ -552,12 +561,12 @@
       <workItem from="1536325279994" duration="569000" />
       <workItem from="1537016187385" duration="244000" />
       <workItem from="1537062754281" duration="139000" />
-      <workItem from="1537256262627" duration="380000" />
+      <workItem from="1537256262627" duration="633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81146000" />
+    <option name="totallyTimeSpent" value="81399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -780,13 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_head.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_navbar.scss" />
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -933,6 +935,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/abouts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -940,10 +949,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/abouts/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_head.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        <state relative-caret-position="323">
+          <caret line="17" column="92" selection-start-line="17" selection-start-column="92" selection-end-line="17" selection-end-column="92" />
         </state>
       </provider>
     </entry>
